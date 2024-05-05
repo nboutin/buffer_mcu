@@ -1,8 +1,7 @@
-//! \file ut_BUF_get_read_write.cpp
+//! \file ut_buf_get_read_write.cpp
 //! \brief Buffer unit test
-//! \date  2023-06
+//! \date  2024-04
 //! \author Nicolas Boutin
-//! \copyright (C) Copyright Marelli 2023
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>

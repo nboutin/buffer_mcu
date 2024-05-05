@@ -1,8 +1,7 @@
-//! \file ut_BUF_reset_read_index.cpp
+//! \file ut_buf_reset_read_index.cpp
 //! \brief Buffer unit test
-//! \date  2023-06
+//! \date  2024-04
 //! \author Nicolas Boutin
-//! \copyright (C) Copyright Marelli 2023
 
 #include <gtest/gtest.h>
 

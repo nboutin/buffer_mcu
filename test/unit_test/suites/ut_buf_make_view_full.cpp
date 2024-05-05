@@ -1,8 +1,7 @@
-//! \file ut_BUF_make_view_full.cpp
+//! \file ut_buf_make_view_full.cpp
 //! \brief Buffer unit test
-//! \date  2022/09
+//! \date  2024-04
 //! \author Nicolas Boutin
-//! \copyright (C) Copyright Marelli 2022
 
 #include <gtest/gtest.h>
 

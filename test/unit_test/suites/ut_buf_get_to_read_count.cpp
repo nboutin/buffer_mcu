@@ -1,8 +1,7 @@
-//! \file ut_BUF_get_to_read_count.cpp
+//! \file ut_buf_get_to_read_count.cpp
 //! \brief Buffer unit test
-//! \date  2022/09
+//! \date  2024-04
 //! \author Nicolas Boutin
-//! \copyright (C) Copyright Marelli 2022
 
 #include <gtest/gtest.h>
 
