@@ -9,14 +9,13 @@ include(cmake/CPM.cmake)
 CPMAddPackage(
   NAME googletest
   GITHUB_REPOSITORY google/googletest
-  # GIT_TAG release-1.8.1
   VERSION 1.13.0
   OPTIONS
-      "INSTALL_GTEST OFF"
-      "gtest_force_shared_crt ON"
+    "INSTALL_GTEST OFF"
+    "gtest_force_shared_crt ON"
 )
 
-add_executable(buffer_mcu_ut
+add_executable(${PROJECT_NAME}
   suites/ut_buf_clear.cpp
   suites/ut_buf_compare.cpp
   suites/ut_buf_fill_pattern.cpp
@@ -36,8 +35,8 @@ add_executable(buffer_mcu_ut
   suites/ut_buf_set_size.cpp
   suites/ut_buf_write_copy.cpp
 )
-target_link_libraries(buffer_mcu_ut PRIVATE buffer_mcu GTest::gmock_main)
-add_test(NAME buffer_mcu_ut COMMAND buffer_mcu_ut)
+target_link_libraries(${PROJECT_NAME} PRIVATE buffer_mcu GTest::gmock_main)
+add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME})
 
 include(GoogleTest)
-gtest_discover_tests(buffer_mcu_ut)
+gtest_discover_tests(${PROJECT_NAME})
