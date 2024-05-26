@@ -8,4 +8,6 @@ target_include_directories(${PROJECT_NAME}
     PUBLIC
         include)
 
-add_subdirectory(test)
+if(BUILD_TESTING AND BUFFER_MCU_TEST)
+    add_subdirectory(test)
+endif()
