@@ -5,14 +5,12 @@
  * \author Nicolas Boutin
  */
 
-#include <stdbool.h>
 #include <stddef.h>
-#include <stdint.h>
 #include <string.h>
 
 #include "buffer/buffer.h"
 
-// --- Private functions
+// --- Private function
 
 static BUF_size_t buf_Min(BUF_size_t left, BUF_size_t right);
 static bool

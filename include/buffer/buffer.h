@@ -10,6 +10,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+// --- Public type
+
 /**
  * \brief Buffer size type
  */
@@ -25,6 +27,8 @@ typedef struct {
   BUF_size_t read_index;  /*!< Read index */
   BUF_size_t size;        /*!< Buffer size */
 } BUF_t;
+
+// --- Public function
 
 /**
  * \brief Buffer initialization
