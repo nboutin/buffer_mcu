@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.28)
-project(buffer_mcu_ut)
+project(buffer_mcu_ut LANGUAGES C CXX)
 
 add_executable(${PROJECT_NAME}
+  $<TARGET_OBJECTS:buffer_mcu>
   suites/ut_buf_clear.cpp
   suites/ut_buf_compare.cpp
   suites/ut_buf_fill_pattern.cpp
