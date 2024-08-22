@@ -34,7 +34,7 @@ BraceWrapping:
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeBraces: Custom
 BreakStringLiterals: false
-ColumnLimit: 80
+ColumnLimit: 120
 IndentCaseLabels: true
 IndentPPDirectives: None
 IndentExternBlock: NoIndent
